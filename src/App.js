@@ -82,7 +82,7 @@ function App() {
                         <Select variant="outlined" onChange={onCountryChange} value={country}>
                             <MenuItem value="worldwide">Worldwide</MenuItem>
                             {countries.map((country) => (
-                                <MenuItem value={country.value} key={country.key}>
+                                <MenuItem value={country.value} key={country.name}>
                                     {country.name}
                                 </MenuItem>
                             ))}

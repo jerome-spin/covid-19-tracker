@@ -6,12 +6,12 @@ function Table({ countries }) {
     return (
         <div className="table">
             {countries.map(({ country, cases }) => (
-                <tr>
-                    <td>{country}</td>
-                    <td>
+                <div className="table__row" key={country}>
+                    <span>{country}</span>
+                    <span>
                         <strong>{numeral(cases).format('0,0')}</strong>
-                    </td>
-                </tr>
+                    </span>
+                </div>
             ))}
         </div>
     );

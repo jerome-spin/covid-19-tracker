@@ -4,6 +4,17 @@
     height: 400px;
     color: #6a5d5d;
 }
+.table div {
+    display: flex;
+    justify-content: space-between;
+}
+.table div span {
+    padding: 0.5rem;
+    border: none;
+}
+.table div:nth-of-type(odd) {
+    background-color: #f3f2f8;
+}
 
 .table tr {
     display: flex;
